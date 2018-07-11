@@ -1,0 +1,39 @@
+.storyItem {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: sandybrown;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+}
+
+.storyItem__score {
+  width: 18%;
+  float: left;
+  height: 100%;
+}
+
+.storyItem__score::before {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+.storyItem__details {
+  width: 78%;
+  float: left;
+  text-align: left;
+}
+
+.storyItem__title {
+  font-weight: bold;
+}
+
+.storyItem__title,
+.storyItem__author {
+  padding-bottom: 10px;
+}
